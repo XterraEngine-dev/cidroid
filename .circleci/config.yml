@@ -5,9 +5,6 @@ jobs:
       - image: circleci/ruby:2.4.1
     steps:
       - checkout
-      - run: echo "A first hello"
+      - run: echo "OK!"
 
-  dependencies:
-    override:
-      - echo y | 'com.android.tools.build:gradle:3.1.4'
-      - ANDROID_HOME=/usr/local/android-sdk-linux ./gradlew dependencies
+
